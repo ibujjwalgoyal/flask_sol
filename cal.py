@@ -7,10 +7,6 @@ def enter():
       a = request.form['nm1']  
       b = request.form['nm2']
       return a+b
-   else:
-      a = request.args.get('nm1') 
-      b = request.args.get('nm2')
-      return a+b
-
+   
 if __name__ == '__main__':
    app.run(debug = True)
